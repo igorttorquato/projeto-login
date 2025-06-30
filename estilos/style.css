@@ -5,44 +5,51 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body, main {
+html, body {
     width: 100vw;
     height: 100vh;
 }
 
 body {
     background-color: #5F2C82;
-}
 
-main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section#login {
+main {
     background-color: white;
     width: 250px;
     height: 500px;
-    overflow: hidden; /* Tudo que tiver fora da borda, fica escondido */
-
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 0px 20px black;
+    overflow: hidden;
 }
 
-section#login > div#imagem {
-    display: block;
-    background: url(../imagens/Imagem-hacker.jpg);
+div#imagem {
+    background: url(../imagens/imagem-hacker-2.jpg);
+    height: 200px;
     background-size: cover;
     background-position: center bottom;
-    height: 200px;
 }
 
-section#login > div#formulario {
-    display: block;
+div#formulario {
     padding: 10px;
 }
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    text-align: justify;
+    font-size: 0.9em;
+}
+
