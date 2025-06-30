@@ -35,8 +35,14 @@ section#login {
 }
 
 section#login > div#imagem {
+    display: block;
     background: url(../imagens/Imagem-hacker.jpg);
     background-size: cover;
     background-position: center bottom;
     height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
